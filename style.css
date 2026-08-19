@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.profile-card {
+    width: 380px;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6a11cb;
+}
+
+.status {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #22c55e;
+    border: 3px solid white;
+    border-radius: 50%;
+    right: 5px;
+    bottom: 10px;
+}
+
+h1 {
+    margin-top: 18px;
+    color: #222;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 8px;
+    color: #6a11cb;
+    font-size: 18px;
+}
+
+.bio {
+    margin: 18px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.skills span {
+    background-color: #eee7ff;
+    color: #6a11cb;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    background-color: #6a11cb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #2575fc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
